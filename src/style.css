@@ -285,6 +285,10 @@
     width: 100px;
     margin: 0 0 15px 0;
   }
+
+  footer .sosmed{
+    margin: 110px 0 0 0;
+  }
   
   @media screen and (max-width: 1200px) {
     
@@ -348,6 +352,10 @@
   
     .service .row .service-card{
       width: 75%;
+    }
+
+    footer .sosmed{
+      margin: 0 0 0 0;
     }
   }
   @media screen and (max-width: 576px) {
