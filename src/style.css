@@ -92,7 +92,7 @@
   .about .row .halakah-about .image::before{
     content: "";
     position: absolute;
-    background-image: url("../src/assets/image/Group\ 2\ \(1\).png");
+    background-image: url("../src/assets/image/Group2.png");
     width: 100px;
     height: 100px;
     background-size: contain;
@@ -104,7 +104,7 @@
   .about .row .halakah-about .image::after{
     content: "";
     position: absolute;
-    background-image: url("../src/assets/image/Group\ 1\ \(1\).png");
+    background-image: url("../src/assets/image/Group1.png");
     width: 100px;
     height: 100px;
     background-size: contain;
