@@ -65,7 +65,7 @@ export default function Footer(){
                 </div>
                 <div className="bottom">
                     <hr />
-                    <p className="text-end mb-0 pb-3 Poppins" style={{fontSize:"12px"}}>© PT Abdi Bangun Aksara &middot; All Rights Reserved</p>
+                    <p className="text-end mb-0 pb-3 Poppins" style={{fontSize:"12px"}}>© 2025 PT Abdi Bangun Aksara &middot; All Rights Reserved</p>
                 </div>
             </div>
         </footer>
