@@ -10,6 +10,14 @@
     font-family: "Oswald", serif;
   }
 
+  .Lato{
+    font-family: "Lato", sans-serif;
+  }
+
+  .Open-sans{
+    font-family: "Open Sans", sans-serif;
+  }
+
   body{
     background-image: url('../src/assets/image/watercolor-paper-texture.jpg');
   }
@@ -277,17 +285,27 @@
   }
   
   footer .row .col-lg-5 p{
-    opacity: 0.8;
-    font-size: 12px;
+    opacity: 0.6;
+    font-size: 11px;
   }
   
   footer .row .col-lg-5 img{
-    width: 100px;
+    width: 20%;
     margin: 0 0 15px 0;
   }
 
   footer .sosmed{
-    margin: 110px 0 0 0;
+    margin: 120px 0 0 0;
+  }
+
+  footer .text-end.quote{
+    transform: translateY(20px);
+  }
+
+  footer .text-end{
+    font-weight: 600;
+    font-size: 13px;
+    padding-bottom: 20px;
   }
   
   @media screen and (max-width: 1200px) {
