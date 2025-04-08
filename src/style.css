@@ -400,4 +400,8 @@
     .service .row .service-card{
       width: 95%;
     }
+
+    footer .text-end{
+      font-size: 11px;
+    }
   }
