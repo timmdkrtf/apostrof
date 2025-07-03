@@ -1,4 +1,4 @@
-import CoverBelakang from "../assets/image/cover-belakang-penyuluh-pertanian.png"
+import CoverBelakang from "../assets/image/cover-belakang-dummy.png"
 import CoverDepan from "../assets/image/cover-depan-penyeluh-pertanian.png"
 
 
