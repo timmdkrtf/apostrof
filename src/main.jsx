@@ -7,10 +7,15 @@ import {
 import './style.css'
 import React from 'react';
 import Landing from './pages/Landing.jsx';
+import PenyuluhPertanianPage from './pages/PenyuluhPertanianPage.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Landing />
+  },
+  {
+    path: '/buku/penyuluh-pertanian',
+    element: <PenyuluhPertanianPage />
   },
 ]);
 
