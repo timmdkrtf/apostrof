@@ -1,7 +1,7 @@
 import Logo from "../assets/image/1. Apostrof Logo Utama (P).png";
 
-import CoverBelakang from "../assets/image/cover-belakang-dummy.png"
-import CoverDepan from "../assets/image/cover-depan-penyeluh-pertanian.png"
+import CoverBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
+import CoverDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
 
 import { useState } from "react";
 

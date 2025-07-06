@@ -1,5 +1,5 @@
-import CoverBelakang from "../assets/image/cover-belakang-dummy.png"
-import CoverDepan from "../assets/image/cover-depan-penyeluh-pertanian.png"
+import CoverBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
+import CoverDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
 
 
 export default function Book(){
