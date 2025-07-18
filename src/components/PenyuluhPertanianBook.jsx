@@ -203,7 +203,7 @@ export default function PenyuluhPertanianBook() {
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Halaman</h6>
-                    <p className="Lato">xix + 169</p>
+                    <p className="Lato">xxiii + 169</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Bahasa</h6>
