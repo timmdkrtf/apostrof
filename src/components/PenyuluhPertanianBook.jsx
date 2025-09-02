@@ -130,8 +130,8 @@ export default function PenyuluhPertanianBook() {
             </div>
             <div className="detail">
               <h5 className="Lato fw-bold" style={{ fontSize: "14px", opacity: "0.8"}}>Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono</h5>
-              <h2 className="Poppins mb-5">Penyuluh Pertanian: Pejuang Swasembada Pangan</h2>
-              <div className="title  mb-4">
+              <h2 className="Poppins mb-3">Penyuluh Pertanian: Pejuang Swasembada Pangan</h2>
+              <div className="title  mb-5">
                 <h5 className="Poppins">Dapatkan sekarang!</h5>
                 <div className="harga">
                   <h3 className="Lato">Rp100.000</h3>
