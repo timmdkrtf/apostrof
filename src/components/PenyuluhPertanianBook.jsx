@@ -129,7 +129,7 @@ export default function PenyuluhPertanianBook() {
               </button>
             </div>
             <div className="detail">
-              <h5 className="Lato fw-bold" style={{ fontSize: "16px", opacity: "0.8"}}>Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono</h5>
+              <h5 className="Lato fw-bold" style={{ fontSize: "14px", opacity: "0.8"}}>Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono</h5>
               <h2 className="Poppins mb-5">Penyuluh Pertanian: Pejuang Swasembada Pangan</h2>
               <div className="title  mb-4">
                 <h5 className="Poppins">Dapatkan sekarang!</h5>
