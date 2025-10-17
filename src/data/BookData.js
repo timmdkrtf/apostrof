@@ -53,7 +53,8 @@ const BookData = [
         status: "visible",
         cta: "Informasi lebih lanjut!",
         more: {
-            authorName: "dr. Lahargo Kembaren, Sp.KJ.",
+            authorName: "Segera Terbit!",
+            // authorName: "dr. Lahargo Kembaren, Sp.KJ.",
             price: 0,
             longDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
