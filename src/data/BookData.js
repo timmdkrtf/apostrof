@@ -2,7 +2,7 @@ import pongbaltanDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
 import pongbaltanBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
 
 import sejigoDepan from "../assets/image/sampul-buku-sejigo-depan.jpeg"
-import sejigoBelakang from "../assets/image/sampul-buku-sejigo-depan"
+import sejigoBelakang from "../assets/image/sampul-buku-sejigo-belakang.jpeg"
 
 const BookData = [
     {
