@@ -1,24 +1,26 @@
-import CoverBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
-import CoverDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
+import BookData from "../data/BookData"
+import { Link } from "react-router-dom"
 
-export default function Book(){
-    return(
+export default function Book() {
+    return (
         <div className="book" id="book">
             <div className="container">
                 <div className="title">
                     <h3 className="roboto">Buku Pilihan</h3>
                 </div>
                 <div className="row">
-                    <div className="content-book">
-                        <div className="cover">
-                            <img src={CoverDepan} alt="" />
-                            <img src={CoverBelakang} alt="" />
+                    {BookData.map((book, index) =>
+                        <div className="content-book" key={index}>
+                            <div className="cover">
+                                <img src={book.image1} alt={book.title} />
+                                <img src={book.image2} alt={book.title} />
+                            </div>
+                            <h6 className={`inria-serif m-0 opacity-75 ${book.status}`}>{book.statusTitle}</h6>
+                            <h5 className="roboto">{book.title}</h5>
+                            <p className="inria-serif">{book.description}</p>
+                            <Link className="alike btn" to={`/buku/${book.slug}`}>Jelajahi Sekarang</Link>
                         </div>
-                        <h6 className="inria-serif m-0 opacity-75">Segera Terbit!</h6>
-                        <h5 className="roboto">Penyuluh Pertanian: Pejuang Swasembada Pangan</h5>
-                        <p className="inria-serif">Penyuluh Pertanian: Pejuang Swasembada Pangan mengungkap peran penting penyuluh sebagai penggerak perubahan di balik ketahanan pangan Indonesia. Buku ini memotret perjalanan panjang dunia penyuluhan, dari masa kolonial hingga era digital, lengkap dengan kisah nyata, pendekatan praktis, dan inovasi di lapangan. Sebuah bacaan reflektif dan inspiratif tentang profesi yang sering luput dari sorotan, namun menjadi kunci swasembada dan kedaulatan pangan bangsa.</p>
-                        <a className="alike btn" href="/buku/penyuluh-pertanian">Jelajahi Sekarang</a>
-                    </div>
+                    )}
                 </div>
             </div>
         </div>

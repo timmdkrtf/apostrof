@@ -1,15 +1,14 @@
 import Logo from "../assets/image/1. Apostrof Logo Utama (P).png";
 
-import CoverBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
-import CoverDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
-
 import { useState } from "react";
+import BookData from "../data/BookData";
+import { useParams } from "react-router-dom";
 
 import { BsWhatsapp } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsFacebook } from "react-icons/bs";
 
-export default function PenyuluhPertanianBook() {
+export default function BookDetail() {
   const breadcrumbStyle = {
     "--bs-breadcrumb-divider": `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E")`,
   };
@@ -17,6 +16,9 @@ export default function PenyuluhPertanianBook() {
   const toggleCover = () => setShowBackCover((prev) => !prev);
 
   const [showBackCover, setShowBackCover] = useState(false);
+
+  const { slug } = useParams();
+  const book = BookData.find((b) => b.slug === slug);
 
   return (
     <>
@@ -41,14 +43,8 @@ export default function PenyuluhPertanianBook() {
               ></button>
             </div>
             <div className="modal-body Lato">
-                <p className="Lato">
-                  Penyuluh Pertanian: Pejuang Swasembada Pangan<br/><br/>
-                  Penyuluh pertanian bukan sekadar pengajar di lapangan. Mereka adalah motor perubahan—membangkitkan semangat petani untuk lebih produktif, lebih berdaulat, dan lebih berdaya saing. Di balik setiap panen yang berhasil, ada peran-peran sunyi para penyuluh yang mengubah kebijakan menjadi aksi nyata yang menyentuh kehidupan petani.<br/><br/>
-                  Buku ini mengajak pembaca menyelami dunia penyuluhan secara utuh. Dimulai dari akar sejarahnya sejak 1867 di Inggris oleh James Stuart, hingga jejak awal di Indonesia pada 1817 ketika G. Reinwardt memperkenalkan ratusan jenis tanaman baru di Kebun Raya Bogor—sampai pada tantangan era kini: digitalisasi, perubahan iklim, dan regenerasi petani.<br/><br/>
-                  Lebih dari sekadar catatan sejarah, Penyuluh Pertanian: Pejuang Swasembada Pangan adalah refleksi kolektif dan edukasi menyeluruh. Buku ini menguraikan ruang lingkup kerja penyuluh dengan bahasa yang mudah dipahami dan aplikatif—membantu masyarakat luas melihat betapa penting dan strategisnya peran penyuluh dalam memperkuat ketahanan pangan serta memberdayakan desa.<br/><br/>
-                  Disusun dari kisah nyata, pendekatan praktis, hingga inovasi yang dilakukan para penyuluh di berbagai pelosok negeri, buku ini mendokumentasikan kerja-kerja pendampingan petani milenial, transformasi kelembagaan petani melalui teknologi, dan berbagai bentuk kontribusi nyata lainnya.<br/><br/>
-                  Buku ini menyadarkan kita bahwa profesi penyuluh bukan sekadar pelaksana program pemerintah, melainkan fondasi utama pembangunan pertanian yang kerap tak terlihat. Sebuah profesi dengan panggilan hati, bekerja dalam kesunyian demi masa depan yang lebih baik bagi petani dan bangsa.<br/><br/>
-                  Penyuluh Pertanian: Pejuang Swasembada Pangan akan membuka mata Anda untuk memahami, menghargai, dan mungkin—tergerak untuk ikut mendukung mereka. Karena kemandirian pangan bangsa hanya mungkin tercapai jika ada mereka yang tak lelah menanam harapan di antara barisan tanaman, dan terus menyuluh jalan bagi petani Indonesia.<br/>
+                <p className="Lato" style={{ whiteSpace: "pre-line", }}>
+                  {book.more.longDesc}
                 </p>
             </div>
           </div>
@@ -100,7 +96,7 @@ export default function PenyuluhPertanianBook() {
                 <a href="/#book">Daftar Buku Apostrof</a>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                Penyuluh Pertanian
+                {book.slug.replace(/-/g, " ")}
               </li>
             </ol>
           </nav>
@@ -108,7 +104,7 @@ export default function PenyuluhPertanianBook() {
             <div className="cover">
               <img
                 id="bookCover"
-                src={showBackCover ? CoverBelakang : CoverDepan}
+                src={showBackCover ? book.image2 : book.image1}
                 alt=""
               />
               <button onClick={toggleCover} className="d-flex">
@@ -129,12 +125,12 @@ export default function PenyuluhPertanianBook() {
               </button>
             </div>
             <div className="detail">
-              <h5 className="Lato fw-bold" style={{ fontSize: "14px", opacity: "0.8"}}>Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono</h5>
-              <h2 className="Poppins mb-3">Penyuluh Pertanian: Pejuang Swasembada Pangan</h2>
+              <h5 className="Lato fw-bold" style={{ fontSize: "14px", opacity: "0.8"}}>{book.more.authorName}</h5>
+              <h2 className="Poppins mb-3">{book.title}</h2>
               <div className="title  mb-5">
                 <h5 className="Poppins">Dapatkan sekarang!</h5>
                 <div className="harga">
-                  <h3 className="Lato">Rp100.000</h3>
+                  <h3 className="Lato">Rp{book.more.price.toLocaleString()}</h3>
                 </div>
               </div>
               <a
@@ -159,10 +155,8 @@ export default function PenyuluhPertanianBook() {
               </a>
               <div className="deskripsi ">
                 <h6 className="Poppins">Deskripsi</h6>
-                <p className="Lato">
-                  Penyuluh Pertanian: Pejuang Swasembada Pangan<br/><br/>
-                  Penyuluh pertanian bukan sekadar pengajar di lapangan. Mereka adalah motor perubahan—membangkitkan semangat petani untuk lebih produktif, lebih berdaulat, dan lebih berdaya saing. Di balik setiap panen yang berhasil, ada peran-peran sunyi para penyuluh yang mengubah kebijakan menjadi aksi nyata yang menyentuh kehidupan petani.<br/><br/>
-                  Buku ini mengajak pembaca menyelami dunia penyuluhan secara utuh. Dimulai dari akar sejarahnya sejak 1867 di Inggris oleh James Stuart, hingga jejak awal di Indonesia pada 1817 ketika G. Reinwardt memperkenalkan ratusan jenis tanaman baru di Kebun Raya Bogor—sampai pada tantangan era kini: digitalisasi, perubahan iklim, dan regenerasi petani.
+                <p className="Lato" style={{ whiteSpace: "pre-line", }}>
+                  {book.more.shortDesc}
                 </p>
                 <button
                   type="button"
@@ -191,27 +185,27 @@ export default function PenyuluhPertanianBook() {
                 <div className="flex-info">
                   <div className="text">
                     <h6 className="Poppins">Penerbit</h6>
-                    <p className="Lato">Abdi Bangun Aksara</p>
+                    <p className="Lato">{book.detailBook.penerbit}</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Lebar</h6>
-                    <p className="Lato">15 cm</p>
+                    <p className="Lato">{book.detailBook.lebar}</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">ISBN</h6>
-                    <p className="Lato">-</p>
+                    <p className="Lato">{book.detailBook.isbn}</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Halaman</h6>
-                    <p className="Lato">xxiii + 169</p>
+                    <p className="Lato">{book.detailBook.halaman}</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Bahasa</h6>
-                    <p className="Lato">Indonesia</p>
+                    <p className="Lato">{book.detailBook.bahasa}</p>
                   </div>
                   <div className="text">
                     <h6 className="Poppins">Panjang</h6>
-                    <p className="Lato">23 cm</p>
+                    <p className="Lato">{book.detailBook.panjang}</p>
                   </div>
                 </div>
               </div>

@@ -310,7 +310,7 @@ body {
   gap: 10px;
   padding: 15px;
   background-color: #ffffff;
-  margin: -130px 0 20px 0;
+  margin: -130px 0 15px 0;
   box-shadow: 0 0 1px 1px #545454;
 }
 
@@ -319,9 +319,13 @@ body {
   border: 1px solid #989898;
 }
 
+.book .row .content-book h6{
+  font-size: 14px;
+}
+
 .book .row .content-book h5 {
   /* margin: 30px 0 10px 0; */
-  margin: 10px 0;
+  margin: 5px 0 10px 0;
 }
 
 .book .row .content-book p {
