@@ -14,6 +14,7 @@ const BookData = [
         slug: "penyuluh-pertanian",
         statusTitle: "-",
         status: "invisible",
+        cta: "Pesan Sekarang!",
         more: {
             authorName: "Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono",
             price: 100000,
@@ -50,6 +51,7 @@ const BookData = [
         slug: "SEJI-GO",
         statusTitle: "segera terbit!",
         status: "visible",
+        cta: "Informasi lebih lanjut!",
         more: {
             authorName: "",
             price: 0,
