@@ -47,7 +47,7 @@ const BookData = [
         image1: sejigoDepan,
         image2: sejigoBelakang,
         title: "SEJI-GO: Sehat Jiwa Bersama Lahargo",
-        description: "Kesehatan jiwa setara penting dengan kesehatan fisik, memengaruhi kemampuan berpikir, merasa, berperilaku, dan menjalin hubungan untuk kualitas hidup yang baik. Buku SEJI-GO: Sehat Jiwa Bersama Lahargo karya dr. Lahargo Kembaren, SpKJ, menjelaskan masalah kesehatan jiwa, dari definisi hingga strategi penanganan, secara jelas dan cerdas. Buku ini informatif, menginspirasi kesadaran kolektif, dan mendukung kehidupan sehat jiwa-raga.",
+        description: "Kesehatan jiwa setara penting dengan kesehatan fisik, memengaruhi kemampuan berpikir, merasa, berperilaku, dan menjalin hubungan untuk kualitas hidup yang baik. Buku SEJI-GO: Sehat Jiwa Bersama Lahargo karya dr. Lahargo Kembaren, Sp.KJ., menjelaskan masalah kesehatan jiwa, dari definisi hingga strategi penanganan, secara jelas dan cerdas. Buku ini informatif, menginspirasi kesadaran kolektif, dan mendukung kehidupan sehat jiwa-raga.",
         slug: "SEJI-GO",
         statusTitle: "Segera Terbit!",
         status: "visible",
@@ -58,11 +58,11 @@ const BookData = [
             price: 0,
             longDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
-                  Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.\n
+                  Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ. — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.\n
                   Lebih dari sekadar bacaan, SEJI-GO menjadi ajakan untuk membangun kesadaran bersama bahwa merawat jiwa adalah langkah penting menuju kehidupan yang sehat, utuh, dan bermakna.`,
             shortDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
-                  Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.`
+                  Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ. — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.`
         },
         detailBook: {
             penerbit: "Abdi Bangun Aksara",
