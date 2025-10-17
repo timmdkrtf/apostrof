@@ -38,7 +38,7 @@ const BookData = [
             lebar: "15 cm",
             isbn: "-",
             halaman: "xxiii + 169",
-            bahasa: "indonesia",
+            bahasa: "Indonesia",
             panjang: "23 cm",
         }
     },
@@ -49,11 +49,11 @@ const BookData = [
         title: "SEJI-GO: Sehat Jiwa Bersama Lahargo",
         description: "Kesehatan jiwa setara penting dengan kesehatan fisik, memengaruhi kemampuan berpikir, merasa, berperilaku, dan menjalin hubungan untuk kualitas hidup yang baik. Buku SEJI-GO: Sehat Jiwa Bersama Lahargo karya dr. Lahargo Kembaren, SpKJ, menjelaskan masalah kesehatan jiwa, dari definisi hingga strategi penanganan, secara jelas dan cerdas. Buku ini informatif, menginspirasi kesadaran kolektif, dan mendukung kehidupan sehat jiwa-raga.",
         slug: "SEJI-GO",
-        statusTitle: "segera terbit!",
+        statusTitle: "Segera Terbit!",
         status: "visible",
         cta: "Informasi lebih lanjut!",
         more: {
-            authorName: "",
+            authorName: "dr. Lahargo Kembaren, Sp.KJ.",
             price: 0,
             longDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
@@ -67,8 +67,8 @@ const BookData = [
             penerbit: "Abdi Bangun Aksara",
             lebar: "14,8 cm",
             isbn: "-",
-            halaman: "-",
-            bahasa: "indonesia",
+            halaman: "124 Halaman",
+            bahasa: "Indonesia",
             panjang: "21 cm",
         }
     }
