@@ -482,23 +482,26 @@ footer .text-end {
 .majmu .content .detail .title h5 {
   font-weight: 600;
   opacity: 0.9;
+  margin: 0 0 13px 0;
 }
 
 .majmu .content .detail .harga {
   display: flex;
-  align-items: end;
+  flex-direction: column;
+  align-items: start;
 }
 .majmu .content .detail .harga h3 {
   opacity: 1;
   font-weight: 700;
+  margin: 0 0 10px 0;
 }
 
 .majmu .content .detail .harga h5 {
   text-decoration: line-through;
   color: #ba1010;
-  opacity: 0.4;
-  font-size: 14px;
-  margin: 0 0 12px 10px;
+  opacity: 0.5;
+  font-size: 16px;
+  margin: 0 0 5px 0;
 }
 
 .majmu .content .detail .jenis-buku {

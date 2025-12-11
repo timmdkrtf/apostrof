@@ -17,7 +17,8 @@ const BookData = [
         cta: "Pesan Sekarang!",
         more: {
             authorName: "Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono",
-            price: 100000,
+            pricePast: 0, 
+            priceCurrent: 100000,
             longDesc: 
                  `Penyuluh Pertanian: Pejuang Swasembada Pangan\n
                   Penyuluh pertanian bukan sekadar pengajar di lapangan. Mereka adalah motor perubahan—membangkitkan semangat petani untuk lebih produktif, lebih berdaulat, dan lebih berdaya saing. Di balik setiap panen yang berhasil, ada peran-peran sunyi para penyuluh yang mengubah kebijakan menjadi aksi nyata yang menyentuh kehidupan petani.\n
@@ -49,13 +50,14 @@ const BookData = [
         title: "SEJI-GO: Sehat Jiwa Bersama Lahargo",
         description: "Kesehatan jiwa setara penting dengan kesehatan fisik, memengaruhi kemampuan berpikir, merasa, berperilaku, dan menjalin hubungan untuk kualitas hidup yang baik. Buku SEJI-GO: Sehat Jiwa Bersama Lahargo karya dr. Lahargo Kembaren, Sp.KJ., menjelaskan masalah kesehatan jiwa, dari definisi hingga strategi penanganan, secara jelas dan cerdas. Buku ini informatif, menginspirasi kesadaran kolektif, dan mendukung kehidupan sehat jiwa-raga.",
         slug: "SEJI-GO",
-        statusTitle: "Segera Terbit!",
-        status: "visible",
-        cta: "Informasi lebih lanjut!",
+        statusTitle: "-",
+        status: "invisible",
+        cta: "Pesan Sekarang!",
         more: {
-            authorName: "Segera Terbit!",
+            authorName: "Ikuti Pre-Order Sekarang!",
             // authorName: "dr. Lahargo Kembaren, Sp.KJ.",
-            price: 0,
+            pricePast: 75000, 
+            priceCurrent: 59500,
             longDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
                   Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ. — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.\n
@@ -67,7 +69,7 @@ const BookData = [
         detailBook: {
             penerbit: "Abdi Bangun Aksara",
             lebar: "14,8 cm",
-            isbn: "-",
+            isbn: "978-634-04-4448-3",
             halaman: "124 Halaman",
             bahasa: "Indonesia",
             panjang: "21 cm",

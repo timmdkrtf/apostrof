@@ -43,9 +43,9 @@ export default function BookDetail() {
               ></button>
             </div>
             <div className="modal-body Lato">
-                <p className="Lato" style={{ whiteSpace: "pre-line", }}>
-                  {book.more.longDesc}
-                </p>
+              <p className="Lato" style={{ whiteSpace: "pre-line" }}>
+                {book.more.longDesc}
+              </p>
             </div>
           </div>
         </div>
@@ -120,48 +120,63 @@ export default function BookDetail() {
                   <path
                     fillRule="evenodd"
                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
+                  ></path>
                 </svg>
               </button>
             </div>
             <div className="detail">
-              <h5 className="Lato fw-bold" style={{ fontSize: "14px", opacity: "0.8"}}>{book.more.authorName}</h5>
+              <h5
+                className="Lato fw-bold"
+                style={{ fontSize: "14px", opacity: "0.8" }}
+              >
+                {book.more.authorName}
+              </h5>
               <h2 className="Poppins mb-4">{book.title}</h2>
 
-                {book.more.price !== 0 && (
-                  <>
-                    <div className="title  mb-5">
-                      <h5 className="Poppins">Dapatkan sekarang!</h5>
-                      <div className="harga">
-                        <h3 className="Lato">Rp{book.more.price.toLocaleString()}</h3>
-                      </div>
+              {book.more.priceCurrent !== 0 && (
+                <>
+                  <div className="title  mb-5">
+                    <h5 className="Poppins">Dapatkan sekarang!</h5>
+                    <div className="harga">
+                      {book.more.pricePast > 0 && (
+                        <h5 className="lato harga-lalu">
+                          Rp{book.more.pricePast.toLocaleString()}
+                        </h5>
+                      )}
+
+                      {book.more.priceCurrent && (
+                        <h3 className="lato harga-sekarang">
+                          Rp{book.more.priceCurrent.toLocaleString()}
+                        </h3>
+                      )}
                     </div>
-                  </>
-                )}
-                  <a
-                    id="href"
-                    className="text-decoration-none"
-                    href="https://api.whatsapp.com/send?phone=6281288048052"
-                    target="_blank"
+                  </div>
+                </>
+              )}
+              <a
+                id="href"
+                className="text-decoration-none"
+                href="https://api.whatsapp.com/send?phone=6281288048052"
+                target="_blank"
+              >
+                <button className="d-flex">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    className="bi bi-whatsapp mt-1 me-2 Poppins"
+                    viewBox="0 0 16 16"
                   >
-                    <button className="d-flex">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        className="bi bi-whatsapp mt-1 me-2 Poppins"
-                        viewBox="0 0 16 16"
-                      >
-                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
-                      </svg>
-                      {book.cta}
-                    </button>
-                  </a>
+                    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                  </svg>
+                  {book.cta}
+                </button>
+              </a>
 
               <div className="deskripsi ">
                 <h6 className="Poppins">Deskripsi</h6>
-                <p className="Lato" style={{ whiteSpace: "pre-line", }}>
+                <p className="Lato" style={{ whiteSpace: "pre-line" }}>
                   {book.more.shortDesc}
                 </p>
                 <button
