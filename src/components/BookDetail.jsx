@@ -136,7 +136,7 @@ export default function BookDetail() {
               {book.more.priceCurrent !== 0 && (
                 <>
                   <div className="title  mb-5">
-                    <h5 className="Poppins">Dapatkan sekarang!</h5>
+                    <h5 className="Poppins">{book.more.priceText}</h5>
                     <div className="harga">
                       {book.more.pricePast > 0 && (
                         <h5 className="lato harga-lalu">

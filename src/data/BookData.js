@@ -19,6 +19,7 @@ const BookData = [
             authorName: "Husni Ginanjar, Yoyon Haryanto, dan Rudi Hartono",
             pricePast: 0, 
             priceCurrent: 100000,
+            priceText: "Dapatkan sekarang!",
             longDesc: 
                  `Penyuluh Pertanian: Pejuang Swasembada Pangan\n
                   Penyuluh pertanian bukan sekadar pengajar di lapangan. Mereka adalah motor perubahan—membangkitkan semangat petani untuk lebih produktif, lebih berdaulat, dan lebih berdaya saing. Di balik setiap panen yang berhasil, ada peran-peran sunyi para penyuluh yang mengubah kebijakan menjadi aksi nyata yang menyentuh kehidupan petani.\n
@@ -54,10 +55,11 @@ const BookData = [
         status: "invisible",
         cta: "Pesan Sekarang!",
         more: {
-            authorName: "Ikuti Pre-Order Sekarang!",
+            authorName: "dr. Lahargo Kembaren, Sp.KJ.",
             // authorName: "dr. Lahargo Kembaren, Sp.KJ.",
             pricePast: 75000, 
             priceCurrent: 59500,
+            priceText: "Ikuti pre-ordernya!",
             longDesc: 
                  `Kesehatan jiwa sama pentingnya dengan kesehatan fisik karena memengaruhi cara seseorang berpikir, merasa, dan berinteraksi. Mental yang sehat memungkinkan individu menghadapi tantangan hidup, mengembangkan potensi diri, dan berkontribusi positif bagi sesama.\n
                   Melalui SEJI-GO: Sehat Jiwa Bersama Lahargo, dr. Lahargo Kembaren, Sp.KJ. — psikiater dan edukator terkemuka di Indonesia — mengajak pembaca memahami kesehatan jiwa secara lebih dekat dan manusiawi. Buku ini membahas berbagai persoalan mental, mulai dari gejala hingga strategi penanganan, dengan gaya yang jernih, cerdas, dan membumi.\n
