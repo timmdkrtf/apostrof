@@ -38,7 +38,7 @@ const BookData = [
         detailBook: {
             penerbit: "Abdi Bangun Aksara",
             lebar: "15 cm",
-            isbn: "-",
+            isbn: "978-634-04-1634-3",
             halaman: "xxiii + 169",
             bahasa: "Indonesia",
             panjang: "23 cm",
