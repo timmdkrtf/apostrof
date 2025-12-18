@@ -1,5 +1,5 @@
-import pongbaltanDepan from "../assets/image/sampul-buku-polbangtan-depan.png"
-import pongbaltanBelakang from "../assets/image/sampul-buku-polbangtan-belakang.png"
+import pongbaltanDepan from "../assets/image/sampul-buku-polbangtan-depan.webp"
+import pongbaltanBelakang from "../assets/image/sampul-buku-polbangtan-belakang.webp"
 
 import sejigoDepan from "../assets/image/sampul-buku-sejigo-depan.webp"
 import sejigoBelakang from "../assets/image/sampul-buku-sejigo-belakang.webp"
