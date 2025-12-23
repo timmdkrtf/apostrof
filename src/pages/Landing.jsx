@@ -6,13 +6,13 @@ import Footer from "../components/Footer"
 
 function Landing(){
     return(
-        <>
+        <div className="paper-texture">
             <Navbar />
             <About />
             <Service />
             <Book />
             <Footer />
-        </>
+        </div>
     );
 }
 

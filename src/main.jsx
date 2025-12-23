@@ -8,6 +8,7 @@ import './style.css'
 import React from 'react';
 import Landing from './pages/Landing.jsx';
 import BookDetailPage from './pages/BookDetailPage.jsx';
+import SejigoOffer from './pages/SejigoOffer.jsx';
 const router = createBrowserRouter([
   {
     path: '/',
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/buku/:slug',
     element: <BookDetailPage />
+  },
+  {
+    path: '/buku/SEJI-GO',
+    element: <SejigoOffer />
   },
 ]);
 
