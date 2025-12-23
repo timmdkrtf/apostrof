@@ -783,6 +783,7 @@ footer .text-end {
 .landing-offer .author .row {
   justify-content: space-between;
   align-items: center;
+  display: flex;
   height: 100%;
 }
 
@@ -804,7 +805,7 @@ footer .text-end {
 }
 
 .landing-offer .author .right {
-  width: 35%;
+  width: 400px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -914,16 +915,16 @@ footer .text-end {
   width: 70%;
 }
 
-.landing-offer .offer .row .left .cover {
+.landing-offer .offer .row .left .cover-book {
   width: 58%;
   height: auto;
 }
 
 .landing-offer .offer .row .left .harga {
   position: absolute;
-  bottom: 100px;
-  right: 100px;
-  width: 230px;
+  bottom: 120px;
+  left: 180px;
+  width: 180px;
 }
 
 .landing-offer .offer .row .left .button {
@@ -942,7 +943,7 @@ footer .text-end {
   align-items: center;
 }
 
-.landing-offer .offer .row .right .bundling {
+/* .landing-offer .offer .row .right .bundling {
   width: 100px;
   margin: 0 0 5px 0;
 }
@@ -950,27 +951,27 @@ footer .text-end {
 .landing-offer .offer .row .right .title {
   width: 70%;
   margin: 0 0 10px 0;
-}
+} */
 
-.landing-offer .offer .row .right .badge-offer {
+/* .landing-offer .offer .row .right .badge-offer {
   width: 70%;
   margin: 0 0 5px 0;
-}
+} */
 
-.landing-offer .offer .row .right .harga {
+/* .landing-offer .offer .row .right .harga {
   position: absolute;
-  top: 140px;
-  right: 90px;
+  top: 155px;
+  right: 100px;
   width: 180px;
-}
+} */
 
-.landing-offer .offer .row .right .cover {
+.landing-offer .offer .row .right .cover-book {
   width: 90%;
   height: auto;
-  margin: 0 auto 10px auto;
+  margin: 0 0 10px auto;
 }
 
-.landing-offer .offer .row .right p {
+/* .landing-offer .offer .row .right p {
   background-color: #151515;
   color: #ffffff;
   font-size: 9px;
@@ -978,12 +979,16 @@ footer .text-end {
   margin: 0 25px 0 auto;
   padding: 2px 7px;
   border-radius: 2px;
-}
+} */
 
 @media screen and (max-width: 1200px) {
   .landing-offer .cover .d-flex .right .badge-text {
     font-size: 26px;
   }
+
+  .landing-offer .detail-cover .content img {
+  width: 45%;
+}
 }
 @media screen and (max-width: 991px) {
   .navbar .line-horizontal {
@@ -1048,6 +1053,84 @@ footer .text-end {
   .landing-offer .synopsis .desc {
     width: 80%;
   }
+
+    .landing-offer .detail-cover .content img {
+  width: 60%;
+}
+
+.landing-offer .author .left .desc {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: justify;
+  width: 90%;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+
+.landing-offer .prapesan {
+  height: auto;
+  padding: 100px 0;
+}
+
+.landing-offer .prapesan .row {
+  flex-direction: column;
+  gap: 50px;
+}
+
+.landing-offer .prapesan .row .left {
+  width: 75%;
+  margin: 0;
+}
+
+.landing-offer .prapesan .row .right {
+  width: 75%;
+}
+
+.landing-offer .offer {
+  padding: 80px 0;
+}
+
+.landing-offer .offer .row {
+  flex-direction: column;
+  gap: 70px;
+}
+
+.landing-offer .offer .row .left {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .left .title {
+  width: 75%;
+}
+
+.landing-offer .offer .row .left .cover-book {
+  width: 70%;
+}
+
+.landing-offer .offer .row .left .harga {
+  position: absolute;
+  bottom: 200px;
+  left: 290px;
+  width: 180px;
+}
+
+.landing-offer .offer .row .left .button{
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.landing-offer .offer .row .right {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 }
 @media screen and (max-width: 768px) {
   .about .row .halakah-about {
@@ -1148,6 +1231,107 @@ footer .text-end {
   .landing-offer .synopsis .desc {
     width: 90%;
   }
+  .landing-offer .detail-cover .content img {
+  width: 70%;
+}
+
+.landing-offer .detail-cover .content .element1 {
+  position: absolute;
+  top: -190px;
+  left: -220px;
+  width: 150px;
+}
+.landing-offer .detail-cover .content .element2 {
+  position: absolute;
+  bottom: -210px;
+  left: -240px;
+  width: 200px;
+}
+.landing-offer .detail-cover .content .element3 {
+  position: absolute;
+  bottom: -200px;
+  right: -220px;
+  width: 160px;
+}
+
+.landing-offer .author {
+  height: auto;
+}
+
+.landing-offer .author .container{
+  width: 100%;
+}
+
+
+.landing-offer .author .row {
+  flex-direction: column;
+}
+
+.landing-offer .author .left {
+  width: 100%;
+  text-align: center;
+}
+
+.landing-offer .author .left img {
+  width: 90%;
+  margin: 0 0 35px 0;
+  filter: drop-shadow(1px 1px 5px #151515);
+}
+
+.landing-offer .author .left .desc {
+  font-size: 20px;
+}
+
+.landing-offer .author .right {
+  width: 100%;
+  position: relative;
+  text-align: end;
+}
+
+
+.landing-offer .author .right img {
+  width: 70%;
+  margin: 0 0 0 auto;
+}
+
+.landing-offer .prapesan .row .left {
+  width: 80%;
+  margin: 0;
+}
+
+.landing-offer .prapesan .row .right {
+  width: 80%;
+}
+
+.landing-offer .offer .row .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .right .cover-book {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px auto;
+}
+
+.landing-offer .offer .row .left .harga {
+  position: absolute;
+  bottom: 180px;
+  left: 270px;
+  width: 180px;
+}
+
+.landing-offer .offer .row .left {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 }
 @media screen and (max-width: 576px) {
   .service .row .service-card {
@@ -1210,6 +1394,103 @@ footer .text-end {
     width: 95%;
     font-size: 18px;
   }
+
+    .landing-offer .detail-cover .content img {
+  width: 320px;
+}
+
+.landing-offer .detail-cover .content .element1 {
+  position: absolute;
+  top: -220px;
+  left: -150px;
+  width: 120px;
+}
+.landing-offer .detail-cover .content .element2 {
+  position: absolute;
+  bottom: -195px;
+  left: -150px;
+  width: 170px;
+}
+.landing-offer .detail-cover .content .element3 {
+  position: absolute;
+  bottom: -250px;
+  right: -160px;
+  width: 130px;
+}
+
+.landing-offer .author .left .desc {
+  font-size: 16px;
+  color: #ffffff;
+  text-align: justify;
+  width: 90%;
+  margin: 0 auto;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.landing-offer .prapesan .row .left {
+  width: 90%;
+  margin: 0;
+}
+
+.landing-offer .prapesan .row .left h4 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.landing-offer .prapesan .row .left .title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.landing-offer .prapesan .row .left .d-flex .subtitle {
+  font-size: 16px;
+}
+
+.landing-offer .prapesan .row .left .d-flex .date {
+  font-size: 16px;
+  text-align: center;
+}
+
+.landing-offer .prapesan .row .right {
+  width: 90%;
+}
+
+.landing-offer .offer .row .right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .right .cover-book {
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px auto;
+}
+
+.landing-offer .offer .row .left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .left .harga {
+  position: absolute;
+  bottom: 200px;
+  left: 260px;
+  width: 160px;
+}
+}
+@media screen and (max-width: 440px) {
+  .landing-offer .offer .row .left .harga {
+  position: absolute;
+  bottom: 170px;
+  left: 220px;
+  width: 130px;
+}
 }
 @media screen and (max-width: 380px) {
   .service .row .service-card {
@@ -1223,4 +1504,34 @@ footer .text-end {
   .book .row .content-book {
     width: 95%;
   }
+
+      .landing-offer .detail-cover .content img {
+  width: 280px;
+}
+
+.landing-offer .detail-cover .content .element1 {
+  position: absolute;
+  top: -200px;
+  left: -130px;
+  width: 120px;
+}
+.landing-offer .detail-cover .content .element2 {
+  position: absolute;
+  bottom: -170px;
+  left: -140px;
+  width: 140px;
+}
+.landing-offer .detail-cover .content .element3 {
+  position: absolute;
+  bottom: -200px;
+  right: -130px;
+  width: 120px;
+}
+
+  .landing-offer .offer .row .left .harga {
+  position: absolute;
+  bottom: 150px;
+  left: 180px;
+  width: 100px;
+}
 }

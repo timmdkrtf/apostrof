@@ -19,10 +19,10 @@ import TitlePrapesan from "../assets/image/title-text-prapesan.webp"
 import CoverPrapesan from "../assets/image/cover-sejigo-prapesan.webp"
 
 import TitleOffer from "../assets/image/title-cover.webp"
-import CoverSingle from "../assets/image/cover-sejigosingle-offer.png"
+import CoverSingle from "../assets/image/cover-sejigosingle-offer.webp"
 import BtnOffer from "../assets/image/btn-offer.webp"
 import BundlingOffer from "../assets/image/bundling-offer.webp"
-import CoverBundle from "../assets/image/cover-sejigowithbundle-offer.webp"
+import CoverBundle from "../assets/image/bg-offer (5).png"
 import HargaPaket1 from "../assets/image/harga-paket1-offer.webp"
 import HargaPaket2 from "../assets/image/harga-paket2-offer.webp"
 import BadgeOffer from "../assets/image/badge-offer.webp"
@@ -108,22 +108,23 @@ export default function SejigoOffer(){
                     <div className="row">
                         <div className="left">
                             <img className="title" src={TitleOffer} alt="" />
-                            <img className="cover" src={CoverSingle} alt="" />
+                            <img className="cover-book" src={CoverSingle} alt="" />
                             <img className="harga" src={HargaPaket1} alt="" />
                             <img className="button" src={BtnOffer} alt="" />
                         </div>
                         <div className="right">
-                            <img className="bundling" src={BundlingOffer} alt="" />
+                            <img className="cover-book" src={CoverBundle} alt="" />
+                            {/* <img className="bundling" src={BundlingOffer} alt="" />
                             <img className="title" src={TitleOffer} alt="" />
                             <img className="badge-offer" src={BadgeOffer} alt="" />
                             <img className="harga" src={HargaPaket2} alt="" />
-                            <img className="cover" src={CoverBundle} alt="" />
-                            <p className="Lato">harga spesial bundling berlaku untuk 50 pembeli pertama</p>
+                            <img className="cover-book" src={CoverBundle} alt="" />
+                            <p className="Lato">harga spesial bundling berlaku untuk 50 pembeli pertama</p> */}
                         </div>
                     </div>
                 </div>
             </div>
-            {/* <Footer/> */}
+            <Footer/>
         </div>
     );
 }
