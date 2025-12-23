@@ -110,7 +110,7 @@ export default function SejigoOffer(){
                             <img className="title" src={TitleOffer} alt="" />
                             <img className="cover-book" src={CoverSingle} alt="" />
                             <img className="harga" src={HargaPaket1} alt="" />
-                            <img className="button" src={BtnOffer} alt="" />
+                            <a href="https://api.whatsapp.com/send/?phone=6281288048052&text=Halo%2C+saya+ingin+mengetahui+lebih+lanjut+mengenai+layanan+atau+produk+yang+ditawarkan+oleh+Abdi+Bangun+Aksara.+Mohon+Informasinya.+&type=phone_number&app_absent=0" target="_blank"><img className="button" src={BtnOffer} alt="" /></a>
                         </div>
                         <div className="right">
                             <img className="cover-book" src={CoverBundle} alt="" />
