@@ -1189,12 +1189,26 @@ footer .text-end {
     width: 80%;
   }
 
-      .landing-offer .cover .d-flex .right .badge-text {
+  .landing-offer .cover .d-flex .right .badge-text {
     font-size: 18px;
   }
 
   .landing-offer .synopsis {
     height: auto;
+  }
+
+      .landing-offer .synopsis .title {
+    width: 70%;
+    margin: 0 auto 20px auto;
+  }
+
+  .landing-offer .synopsis .kutip-line {
+    width: 95%;
+  }
+
+  .landing-offer .synopsis .desc {
+    width: 95%;
+    font-size: 18px;
   }
 }
 @media screen and (max-width: 380px) {

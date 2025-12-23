@@ -59,7 +59,7 @@ export default function SejigoOffer(){
                     </div>
                 </div>
             </div>
-            {/* <div className="detail-cover">
+            <div className="detail-cover">
                 <div className="container">
                     <div className="content">
                         <div className="position-absolute">
@@ -122,7 +122,7 @@ export default function SejigoOffer(){
                         </div>
                     </div>
                 </div>
-            </div> */}
+            </div>
             {/* <Footer/> */}
         </div>
     );
