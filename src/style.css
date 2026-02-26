@@ -725,23 +725,25 @@ footer .text-end {
 }
 
 .landing-offer .detail-cover {
-  height: 100dvh;
-  background-image: url("/src/assets/image/bg-detailimage.webp");
-  background-size: cover;
-  padding: 80px 0 80px 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url("/src/assets/image/bg-detailimage.webp") center/cover no-repeat;
 }
 
 .landing-offer .detail-cover .container {
-  height: 100%;
-}
-
-.landing-offer .detail-cover .content {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+}
+
+.landing-offer .detail-cover .content {
   position: relative;
+  width: 100%;
+  max-width: 1100px;
 }
 
 .landing-offer .detail-cover .content .element1 {
@@ -763,8 +765,47 @@ footer .text-end {
   width: 190px;
 }
 
+/* Semua badge jadi absolute */
 .landing-offer .detail-cover .content img {
-  width: 60%;
+  position: absolute;
+  width: 240px;
+}
+
+/* DETAIL BOOK (gambar utama) */
+.landing-offer .detail-cover .content img:nth-child(1) {
+  width: 450px;
+  display: block;
+  margin: auto;
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+}
+
+/* Semua badge */
+.landing-offer .detail-cover .content img:nth-child(2),
+.landing-offer .detail-cover .content img:nth-child(3),
+.landing-offer .detail-cover .content img:nth-child(4) {
+  position: absolute;
+  width: 240px;
+  z-index: 3;
+}
+
+.landing-offer .detail-cover .content img:nth-child(2) {
+  top: -10px;
+  left: 45%;
+  transform: translateX(-260px);
+}
+
+.landing-offer .detail-cover .content img:nth-child(3) {
+  bottom: -20px;
+  left: 60%;
+  transform: translateX(-420px);
+}
+
+.landing-offer .detail-cover .content img:nth-child(4) {
+  bottom: 10px;
+  left: 35%;
+  transform: translateX(260px);
 }
 
 .landing-offer .author {
@@ -888,26 +929,54 @@ footer .text-end {
 }
 
 .landing-offer .offer {
-  height: auto;
+  height: 100vh;
   background-image: url("/src/assets/image/bg-offer.webp");
   background-size: cover;
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .landing-offer .offer .container {
   height: 100%;
   padding-top: 30px;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.landing-offer .offer .row {
+/* .landing-offer .offer .row {
   height: 100%;
+  justify-content: center;
+  align-items: center;
+} */
+
+ .landing-offer .offer .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.landing-offer .offer .offer-button {
+  margin-top: -100px;
+  display: flex;
+  justify-content: center;
+}
+
+.landing-offer .offer .offer-button .button {
+  width: 220px;
+  filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.6));
+  transition: 0.3s ease;
+}
+
+.landing-offer .offer .offer-button .button:hover {
+  transform: scale(1.05);
+}
+
 .landing-offer .offer .row .left {
-  width: 50%;
   position: relative;
 }
 
@@ -916,7 +985,7 @@ footer .text-end {
 }
 
 .landing-offer .offer .row .left .cover-book {
-  width: 58%;
+  width: 75%;
   height: auto;
 }
 
@@ -936,11 +1005,49 @@ footer .text-end {
 }
 
 .landing-offer .offer .row .right {
-  width: 50%;
+  order: 3;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.landing-offer .offer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .left,
+.landing-offer .offer .row .center,
+.landing-offer .offer .row .right {
+  width: 33.33%;
+}
+
+/* CENTER */
+.landing-offer .offer .row .center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .center .cover-book {
+  width: 90%;
+  height: auto;
+}
+
+.landing-offer .offer .row .center .button {
+  position: absolute;
+  bottom: -60px; /* atur sesuai kebutuhan */
+  left: 80px;
+  width: 220px;
+  filter: drop-shadow(0 5px 2px rgba(0, 0, 0, 0.6));
+  transition: 0.3s ease;
+}
+
+.landing-offer .offer .row .center .button:hover {
+  transform: scale(1.05);
 }
 
 /* .landing-offer .offer .row .right .bundling {
@@ -966,9 +1073,9 @@ footer .text-end {
 } */
 
 .landing-offer .offer .row .right .cover-book {
-  width: 90%;
+  width: 75%;
   height: auto;
-  margin: 0 0 10px auto;
+  margin: 60px 0 10px auto;
 }
 
 /* .landing-offer .offer .row .right p {
@@ -989,6 +1096,46 @@ footer .text-end {
   .landing-offer .detail-cover .content img {
   width: 70%;
 }
+}
+@media (max-width: 1024px) {
+
+  .landing-offer .detail-cover {
+    height: 100vh;
+    padding: 0 40px;
+  }
+
+  /* BOOK */
+  .landing-offer .detail-cover .content img:nth-child(1) {
+    width: 480px;
+  }
+
+  /* LABEL UMUM */
+  .landing-offer .detail-cover .content img:nth-child(2),
+  .landing-offer .detail-cover .content img:nth-child(3),
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    width: 300px;
+  }
+
+  /* label-1 */
+  .landing-offer .detail-cover .content img:nth-child(2) {
+    top: -80px;
+    left: 38%;
+    transform: translateX(-220px);
+  }
+
+  /* label-2 */
+  .landing-offer .detail-cover .content img:nth-child(3) {
+    bottom: -45px;
+    left: 45%;
+    transform: translateX(-330px);
+  }
+
+  /* label-3 */
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    bottom: 0;
+    left: 35%;
+    transform: translateX(200px);
+  }
 }
 @media screen and (max-width: 991px) {
   .navbar .line-horizontal {
@@ -1087,15 +1234,18 @@ footer .text-end {
 }
 
 .landing-offer .offer {
-  padding: 80px 0;
+  height: auto;
+  min-height: 100vh;
+  padding: 100px 0;
 }
 
 .landing-offer .offer .row {
   flex-direction: column;
-  gap: 70px;
+  gap: 60px;
 }
 
 .landing-offer .offer .row .left {
+  order: 2;
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -1108,7 +1258,7 @@ footer .text-end {
 }
 
 .landing-offer .offer .row .left .cover-book {
-  width: 70%;
+  width: 100%;
 }
 
 .landing-offer .offer .row .left .harga {
@@ -1125,12 +1275,34 @@ footer .text-end {
 }
 
 .landing-offer .offer .row .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-offer .offer .row .left,
+.landing-offer .offer .row .center,
+.landing-offer .offer .row .right {
   width: 85%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+.landing-offer .offer .row .center .cover-book {
+  width: 100%;
+}
+
+.landing-offer .offer .row .center .button {
+  width: 200px;
+}
+
+.landing-offer .offer .offer-button {
+  margin-top: 60px;
+}
+
 }
 @media screen and (max-width: 768px) {
   .about .row .halakah-about {
@@ -1231,28 +1403,49 @@ footer .text-end {
   .landing-offer .synopsis .desc {
     width: 90%;
   }
-  .landing-offer .detail-cover .content img {
-  width: 100%;
-}
+  .landing-offer .detail-cover {
+    height: 100svh;
+    padding: 0 20px;
+  }
 
-.landing-offer .detail-cover .content .element1 {
-  position: absolute;
-  top: -190px;
-  left: -220px;
-  width: 150px;
-}
-.landing-offer .detail-cover .content .element2 {
-  position: absolute;
-  bottom: -210px;
-  left: -240px;
-  width: 200px;
-}
-.landing-offer .detail-cover .content .element3 {
-  position: absolute;
-  bottom: -200px;
-  right: -220px;
-  width: 160px;
-}
+  .landing-offer .detail-cover .content {
+    max-width: 500px;
+  }
+
+  /* BOOK */
+  .landing-offer .detail-cover .content img:nth-child(1) {
+    width: 85%;
+    max-width: 340px;
+  }
+
+  /* LABEL */
+  .landing-offer .detail-cover .content img:nth-child(2),
+  .landing-offer .detail-cover .content img:nth-child(3),
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    width: 140px;
+  }
+
+  /* Label atas */
+  .landing-offer .detail-cover .content img:nth-child(2) {
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Bawah kiri */
+  .landing-offer .detail-cover .content img:nth-child(3) {
+    bottom: 5%;
+    left: 0;
+    transform: none;
+  }
+
+  /* Bawah kanan */
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    bottom: 5%;
+    right: 0;
+    left: auto;
+    transform: none;
+  }
 
 .landing-offer .author {
   height: auto;
@@ -1488,6 +1681,18 @@ footer .text-end {
   left: 260px;
   width: 160px;
 }
+.landing-offer .offer .row .center {
+  width: 100%;
+  order: 1;
+}
+
+.landing-offer .offer .row .center .cover-book {
+  width: 100%;
+}
+
+.landing-offer .offer .row .center .button {
+  width: 180px;
+}
 }
 @media screen and (max-width: 440px) {
   .landing-offer .offer .row .left .harga {
@@ -1496,6 +1701,52 @@ footer .text-end {
   left: 220px;
   width: 130px;
 }
+}
+@media (max-width: 480px) {
+
+  .landing-offer .detail-cover {
+    height: 100svh;
+    padding: 0 20px;
+  }
+
+  .landing-offer .detail-cover .content {
+    max-width: 500px;
+  }
+
+  /* BOOK */
+  .landing-offer .detail-cover .content img:nth-child(1) {
+    width: 85%;
+    max-width: 340px;
+  }
+
+  /* LABEL */
+  .landing-offer .detail-cover .content img:nth-child(2),
+  .landing-offer .detail-cover .content img:nth-child(3),
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    width: 140px;
+  }
+
+  /* Label atas */
+  .landing-offer .detail-cover .content img:nth-child(2) {
+    top: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Bawah kiri */
+  .landing-offer .detail-cover .content img:nth-child(3) {
+    bottom: -5%;
+    left: 0;
+    transform: none;
+  }
+
+  /* Bawah kanan */
+  .landing-offer .detail-cover .content img:nth-child(4) {
+    bottom: 1%;
+    right: 0;
+    left: auto;
+    transform: none;
+  }
 }
 @media screen and (max-width: 380px) {
   .service .row .service-card {

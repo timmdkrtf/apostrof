@@ -27,6 +27,18 @@ import HargaPaket1 from "../assets/image/harga-paket1-offer.webp"
 import HargaPaket2 from "../assets/image/harga-paket2-offer.webp"
 import BadgeOffer from "../assets/image/badge-offer.webp"
 
+import CtaAtas from "../assets/image/title-text-cta-atas.png"
+import CtaBawah from "../assets/image/title-text-cta-bawah.png"
+
+import Order1 from "../assets/image/lp1.png"
+import Order2 from "../assets/image/lp2.png"
+import Order3 from "../assets/image/lp3.png"
+
+import DetailBook from "../assets/image/detail-book.png"
+import Badge1 from "../assets/image/badge1.png"
+import Badge2 from "../assets/image/badge2.png"
+import Badge3 from "../assets/image/badge3.png"
+
 import { useEffect } from "react";
 
 export default function SejigoOffer(){
@@ -74,7 +86,10 @@ export default function SejigoOffer(){
             <div className="detail-cover" data-aos="fade-up">
                 <div className="container">
                     <div className="content">
-                        <img src={CoverDetail} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" alt="" />
+                        <img src={DetailBook} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" alt="" />
+                        <img src={Badge1} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" alt="" />
+                        <img src={Badge2} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" alt="" />
+                        <img src={Badge3} data-aos="fade-up" data-aos-delay="500" data-aos-duration="1500" alt="" />
                     </div>
                 </div>
             </div>
@@ -97,12 +112,13 @@ export default function SejigoOffer(){
                 <div className="container">
                     <div className="row">
                         <div className="left">
-                            <h4 className="Poppins">JANGAN LEWATKAN!</h4>
-                            <img className="title" src={TitlePrapesan} data-aos="fade-right" data-aos-delay="200" alt="" />
-                            <div className="d-flex">
+                            {/* <h4 className="Poppins">JANGAN LEWATKAN!</h4> */}
+                            <a href="#offer"><img className="title" src={CtaAtas} data-aos="fade-right" data-aos-delay="200" alt="" /></a>
+                            <a href="#offer"><img className="title" src={CtaBawah} data-aos="fade-right" data-aos-delay="200" alt="" /></a>
+                            {/* <div className="d-flex">
                                 <p className="subtitle Poppins" data-aos="fade-up" data-aos-delay="300">Periode Promo</p>
                                 <p className="date Poppins" data-aos="fade-up" data-aos-delay="300">22 Desember 2025 - 12 Januari 2026</p>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="right">
                             <img src={CoverPrapesan} data-aos="fade-up" data-aos-delay="700" data-aos-duration="1500" alt="" />
@@ -110,17 +126,24 @@ export default function SejigoOffer(){
                     </div>
                 </div>
             </div>
-            <div className="offer">
+            <div id="offer" className="offer">
                 <div className="container">
                     <div className="row">
                         <div className="left">
-                            <img className="title" src={TitleOffer} alt="" />
+                            <img className="cover-book" src={Order1} alt="" />
+                            {/* <img className="title" src={TitleOffer} alt="" />
                             <img className="cover-book" src={CoverSingle} alt="" />
-                            <img className="harga" src={HargaPaket1} alt="" />
-                            <a href="https://api.whatsapp.com/send/?phone=6281288048052&text=Halo%2C+saya+ingin+mengetahui+lebih+lanjut+mengenai+layanan+atau+produk+yang+ditawarkan+oleh+Abdi+Bangun+Aksara.+Mohon+Informasinya.+&type=phone_number&app_absent=0" target="_blank"><img className="button" src={BtnOffer} alt="" /></a>
+                            <img className="harga" src={HargaPaket1} alt="" /> */}
+                            {/* <a href="https://api.whatsapp.com/send/?phone=6281288048052&text=Halo%2C+saya+ingin+mengetahui+lebih+lanjut+mengenai+layanan+atau+produk+yang+ditawarkan+oleh+Abdi+Bangun+Aksara.+Mohon+Informasinya.+&type=phone_number&app_absent=0" target="_blank"><img className="button" src={BtnOffer} alt="" /></a> */}
+                        </div>
+                        <div className="center">
+                            <img className="cover-book" src={Order2} alt="" />
+                            {/* <img className="cover-book" src={CoverSingle} alt="" /> */}
+                            {/* <a href="https://api.whatsapp.com/send/?phone=6281288048052&text=Halo%2C+saya+ingin+mengetahui+lebih+lanjut+mengenai+layanan+atau+produk+yang+ditawarkan+oleh+Abdi+Bangun+Aksara.+Mohon+Informasinya.+&type=phone_number&app_absent=0" target="_blank"><img className="button" src={BtnOffer} alt="" /></a> */}
                         </div>
                         <div className="right">
-                            <img className="cover-book" src={CoverBundle} alt="" />
+                            <img className="cover-book" src={Order3} alt="" />
+                            {/* <img className="cover-book" src={CoverBundle} alt="" /> */}
                             {/* <img className="bundling" src={BundlingOffer} alt="" />
                             <img className="title" src={TitleOffer} alt="" />
                             <img className="badge-offer" src={BadgeOffer} alt="" />
@@ -128,6 +151,11 @@ export default function SejigoOffer(){
                             <img className="cover-book" src={CoverBundle} alt="" />
                             <p className="Lato">harga spesial bundling berlaku untuk 50 pembeli pertama</p> */}
                         </div>
+                    </div>
+                    <div className="offer-button">
+                        <a href="https://api.whatsapp.com/send/?phone=6281288048052&text=Halo%2C+saya+ingin+mengetahui+lebih+lanjut+mengenai+layanan+atau+produk+yang+ditawarkan+oleh+Abdi+Bangun+Aksara.+Mohon+Informasinya.+&type=phone_number&app_absent=0" target="_blank">
+                            <img className="button" src={BtnOffer} alt="" />
+                        </a>
                     </div>
                 </div>
             </div>
