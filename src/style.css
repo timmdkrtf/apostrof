@@ -298,7 +298,7 @@ body .paper-texture {
 }
 
 .book .row .content-book {
-  width: 32%;
+  flex: 1 1 calc(33.333% - 20px);
   padding: 25px 25px 60px 25px;
   margin: 130px 0 0 0;
   box-shadow: 0 0 1px 1px #545454;
@@ -316,6 +316,9 @@ body .paper-texture {
   background-color: #ffffff;
   margin: -130px 0 15px 0;
   box-shadow: 0 0 1px 1px #545454;
+}
+#href.no-price button{
+  margin-top: -50px;
 }
 
 .book .row .content-book .cover img {

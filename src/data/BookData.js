@@ -4,6 +4,9 @@ import pongbaltanBelakang from "../assets/image/sampul-buku-polbangtan-belakang.
 import sejigoDepan from "../assets/image/sampul-buku-sejigo-depan.webp"
 import sejigoBelakang from "../assets/image/sampul-buku-sejigo-belakang.webp"
 
+import Depan_KTMS from "../assets/image/Kover-Depan-KTMS.png"
+import Belakang_KTMS from "../assets/image/Kover-Belakang-KTMS.png"
+
 const BookData = [
     {
         id: 1,
@@ -73,6 +76,42 @@ const BookData = [
             lebar: "14,8 cm",
             isbn: "978-634-04-4448-3",
             halaman: "124 Halaman",
+            bahasa: "Indonesia",
+            panjang: "21 cm",
+        }
+    },
+    {
+        id: 3,
+        image1: Depan_KTMS,
+        image2: Belakang_KTMS,
+        title: "Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan", 
+        description: "Buku Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan menjelaskan bahwa kepemimpinan bukan sekadar jabatan, melainkan kemampuan menggerakkan orang, membangun visi, dan menciptakan perubahan. Buku ini mengulas konsep dan teori kepemimpinan serta menunjukkan bahwa kepemimpinan dapat dipelajari melalui pengalaman, kerja tim, dan berbagai aktivitas pengembangan diri. Selain itu, pembaca juga diperkenalkan pada praktik penting seperti komunikasi efektif, pengambilan keputusan, kerja sama tim, dan sikap profesional.", 
+        slug: "Kepemimpinan Transformatif",
+        statusTitle: "-",
+        status: "invisible",
+        cta: "Informasi Lebih Lanjut!",
+        more: {
+            authorName: "Zahron Helmi, Yoyon Haryanto, Rudi Hartono, Suherlan",
+            pricePast: 0, 
+            priceCurrent: "",
+            priceText: "Segera Terbit!",
+            longDesc: 
+                 `Buku Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan mengajak pembaca memahami bahwa kepemimpinan bukan sekadar jabatan, tetapi kemampuan menggerakkan orang, membangun visi, dan menciptakan perubahan yang bermakna. Di tengah dinamika dunia kerja dan organisasi yang terus berkembang, kemampuan memimpin menjadi bekal penting untuk beradaptasi, berkolaborasi, dan memberikan kontribusi nyata.
+
+                Melalui pembahasan yang runtut dan mudah dipahami, buku ini mengulas konsep dasar kepemimpinan serta berbagai teori yang menjelaskan bagaimana seorang pemimpin terbentuk dan berkembang. Pembaca diajak melihat bahwa kepemimpinan dapat dipelajari dan dilatih sejak dini melalui pengalaman belajar, kerja tim, serta berbagai aktivitas yang menumbuhkan keterampilan profesional.
+
+                Lebih dari sekadar teori, buku ini juga menghadirkan pemahaman praktis tentang komunikasi efektif, pengambilan keputusan, kerja sama tim, hingga sikap profesional dalam menghadapi berbagai situasi nyata. Dengan pendekatan yang aplikatif, buku ini diharapkan menjadi bekal awal bagi pembaca untuk menumbuhkan jiwa kepemimpinan yang adaptif, bertanggung jawab, dan siap menghadapi tantangan di dunia kerja.
+                `,
+            shortDesc: 
+                `
+                  Buku Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan mengajak pembaca memahami bahwa kepemimpinan bukan sekadar jabatan, tetapi kemampuan menggerakkan orang, membangun visi, dan menciptakan perubahan yang bermakna. Di tengah dinamika dunia kerja dan organisasi yang terus berkembang, kemampuan memimpin menjadi bekal penting untuk beradaptasi, berkolaborasi, dan memberikan kontribusi nyata.
+                `
+        },
+        detailBook: {
+            penerbit: "Abdi Bangun Aksara",
+            lebar: "14,8 cm",
+            isbn: "-",
+            halaman: "vi + 276",
             bahasa: "Indonesia",
             panjang: "21 cm",
         }

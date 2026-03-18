@@ -155,7 +155,7 @@ export default function BookDetail() {
               )}
               <a
                 id="href"
-                className="text-decoration-none"
+                className={`text-decoration-none ${!book.more.priceCurrent ? "no-price" : ""}`}
                 href="https://api.whatsapp.com/send?phone=6281288048052"
                 target="_blank"
               >
