@@ -86,7 +86,7 @@ const BookData = [
         image2: Belakang_KTMS,
         title: "Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan", 
         description: "Buku Kepemimpinan Transformatif: Menggerakkan Sistem, Menumbuhkan Perubahan menjelaskan bahwa kepemimpinan bukan sekadar jabatan, melainkan kemampuan menggerakkan orang, membangun visi, dan menciptakan perubahan. Buku ini mengulas konsep dan teori kepemimpinan serta menunjukkan bahwa kepemimpinan dapat dipelajari melalui pengalaman, kerja tim, dan berbagai aktivitas pengembangan diri. Selain itu, pembaca juga diperkenalkan pada praktik penting seperti komunikasi efektif, pengambilan keputusan, kerja sama tim, dan sikap profesional.", 
-        slug: "Kepemimpinan Transformatif",
+        slug: "kepemimpinan-transformatif",
         statusTitle: "-",
         status: "invisible",
         cta: "Informasi Lebih Lanjut!",
